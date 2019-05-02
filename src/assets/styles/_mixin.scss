@@ -1,0 +1,46 @@
+// bootstrap 4
+@function breakpoint($name) {
+  $breakpoint: map-get($breakpoints, $name);
+  @return if($breakpoint != 0, $breakpoint, null);
+}
+
+@mixin media-breakpoint-min($name) {
+  $min: breakpoint($name);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-max($name) {
+  $max: breakpoint($name);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin media-breakpoint($lower, $upper: 0) {
+  $min: breakpoint($lower);
+  $max: breakpoint($upper);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include media-breakpoint-min($lower) {
+      @content;
+    }
+  } @else if $min == null {
+    @include media-breakpoint-max($uppe) {
+      @content;
+    }
+  }
+}

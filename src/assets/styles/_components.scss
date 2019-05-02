@@ -1,0 +1,293 @@
+* {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+html, body{
+  min-height: 100%;
+  height: 100%;
+  background-color: $theme;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#app{
+  height: 100%;
+}
+
+.export-pdf {
+  display: flex;
+  justify-content: center;
+  padding-bottom: $space-xs;
+
+  button {
+    border-radius: 5px;
+    border: 1px $theme solid;
+    background-color: $theme;
+    color: $black;
+  }
+}
+
+.container {
+  background-color: $white;
+  margin: $space-md $space-xxlg;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: $space-sm 0;
+
+  @include media-breakpoint-max(md) {
+    margin: $space-md $space-sm;
+  }
+
+  @include media-breakpoint(md, lg) {
+    margin: $space-md $space-xlg;
+  }
+}
+
+.has-icon {
+  display: flex;
+  align-items: center;
+
+  span {
+    padding-left: $space-xxs;
+    padding-right: $space-sm;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.markdown {
+  a {
+    text-decoration: none;
+    color: $dark-blue-gray;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  ol, ul {
+    padding: 0 $space-sm;
+  }
+}
+
+.avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 20%;
+  align-self: center;
+}
+
+.info {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+
+  &-name {
+    font-size: 36px;
+    margin-bottom: 4px;
+    font-family: 'Asap', sans-serif;
+  }
+
+  &-detail {
+    justify-content: center;
+    color: $gray;
+
+    @include media-breakpoint-max(sm) {
+      font-size: 8px;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  margin-top: $space-md;
+
+  .side-bar {
+    flex: 1;
+    padding-left: $space-md;
+    padding-right: $space-sm;
+  }
+
+  .main-info {
+    flex: 3;
+    padding-left: $space-sm;
+    padding-right: $space-md;
+  }
+
+  @include media-breakpoint-max(sm) {
+    flex-direction: column-reverse;
+    margin-top: $space-sm;
+
+    .side-bar {
+      padding: 0 24px;
+    }
+
+    .main-info {
+      padding: 0 24px;
+    }
+  }
+}
+
+.side-bar-content {
+  text-align: center;
+  margin-bottom: $space-md;
+
+  .title {
+    justify-content: center;
+    font-weight: bold;
+
+    span {
+      padding: 0 $space-sm
+    }
+  }
+
+  .text-block {
+    padding: $space-xs 0;
+
+    a {
+      color: $dark-blue-gray;
+    }
+
+    p {
+      padding: $space-xxs 0;
+    }
+  }
+
+  .progress-bar-block {
+    display: flex;
+    flex-direction: column;
+    padding: $space-xs 0;
+
+    .has-icon {
+      justify-content: center;
+    }
+
+    .description {
+      padding: $space-xs;
+      padding-left: 12px;
+      font-size: 14px;
+
+      @include media-breakpoint-max(sm) {
+        padding: $space-xs;
+      }
+    }
+  }
+}
+
+.progress-bar {
+  align-self: center;
+  width: 120px;
+  border-radius: 5px;
+  margin-top: $space-xxs;
+
+  span {
+    background-color: $theme;
+    height: 2px;
+    border-radius: 5px;
+    display: block;
+    animation: progress 0.5s linear forwards;
+  }
+
+  @include media-breakpoint-max(sm) {
+    width: 220px;
+    margin: $space-xxs 0;
+  }
+}
+
+@keyframes progress {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.main-info-content {
+  padding-bottom: $space-sm;
+
+  .title {
+    justify-content: flex-start;
+    font-weight: bolder;
+    font-size: 16px;
+
+    span {
+      padding-left: $space-md - 6px;
+    }
+  }
+
+  .block {
+    border-left: 2px $theme solid;
+    margin-left: 8px;
+    padding: $space-xxs $space-md;
+    align-items: center;
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+    color: $gray;
+
+    .block-text {
+      font-size: 14px;
+
+      @extend .markdown
+    };
+
+    @include media-breakpoint-max(sm) {
+      padding-right: 0;
+    }
+  }
+
+
+  .period-block {
+    margin-bottom: $space-sm;
+
+    .border-circle {
+      position: absolute;
+      left: -4px;
+      background-color: $white;
+      color: $theme;
+      margin-top: 8px;
+    }
+
+    .subtitle {
+      color: $black;
+      display: flex;
+      align-content: center;
+      flex-wrap: wrap;
+
+      .organization {
+        @extend .markdown
+      }
+
+      span {
+        padding-right: $space-xs;
+        padding-left: 0;
+      }
+
+      .sm-show {
+        display: none;
+      }
+
+      @include media-breakpoint-max(sm) {
+        align-content: flex-start;
+        flex-direction: column;
+        font-size: 16px;
+
+        .sm-hide {
+          display: none;
+        }
+
+        .sm-show {
+          display: block;
+        }
+      }
+    }
+
+    .date {
+      font-size: 14px;
+    }
+  }
+}
