@@ -4,7 +4,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    alias: {
+      src: path.resolve(__dirname, 'src/'),
+      components: path.resolve(__dirname, 'src/components/'),
+      assets: path.resolve(__dirname, 'src/assets/'),
+    }
   },
   module: {
     rules: [
