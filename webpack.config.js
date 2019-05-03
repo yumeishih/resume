@@ -6,9 +6,10 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      src: path.resolve(__dirname, 'src/'),
-      components: path.resolve(__dirname, 'src/components/'),
-      assets: path.resolve(__dirname, 'src/assets/'),
+      Src: path.resolve(__dirname, 'src/'),
+      Components: path.resolve(__dirname, 'src/components/'),
+      Assets: path.resolve(__dirname, 'src/assets/'),
+      Utils: path.resolve(__dirname, 'src/utils/'),
     }
   },
   module: {
@@ -32,6 +33,10 @@ module.exports = {
       {
         test: /\.(css|scss|sass)$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+      },
+      {
+        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        loader: 'url-loader?limit=100000'
       }
     ]
   },
