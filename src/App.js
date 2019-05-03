@@ -1,9 +1,12 @@
 import React from 'react'
+import Avartar from 'Components/Avatar'
+import Info from 'Components/Info'
 
 const App = () => {
   return (
-    <div>
-      Hello World
+    <div className="container">
+      <Avartar />
+      <Info />
     </div>
   )
 }
