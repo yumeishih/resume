@@ -7,7 +7,7 @@ const Info = () => {
   return (
     <div className='info'>
       <p className='info-name'>{name}</p>
-      <div className='info-detail'>
+      <div className='info-detail has-icon'>
         <span>{jobTitle}</span>
         <TiLocation />
         <span>{local}</span>

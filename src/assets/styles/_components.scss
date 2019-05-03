@@ -18,7 +18,7 @@ html, body{
 .container {
   background-color: $white;
   margin: $space-md $space-xxlg;
-  height: 90%;
+  height: 100%;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -30,6 +30,10 @@ html, body{
 
   @include media-breakpoint(md, lg) {
     margin: $space-md $space-xlg;
+  }
+
+  .sub-container {
+    width: 100%;
   }
 }
 
@@ -52,18 +56,88 @@ html, body{
   }
 
   &-detail {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     color: $gray;
-
-    span {
-      padding-left: $space-xxs;
-      padding-right: $space-sm;
-    }
 
     @include media-breakpoint-max(sm) {
       display: none;
     }
+  }
+}
+
+.main {
+  display: flex;
+
+  .side-bar {
+    flex: 1;
+    padding-top: $space-sm
+  }
+
+  .main-info {
+    flex: 2;
+    border: 1px $theme solid;
+  }
+}
+
+.side-bar-content {
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: $space-md;
+
+  .title {
+    font-weight: bold;
+
+    span {
+      padding: 0 $space-sm
+    }
+  }
+
+  .text-block {
+    padding: $space-xs 0
+  }
+
+  .progress-bar-block {
+    display: flex;
+    flex-direction: column;
+    padding: $space-xs 0
+  }
+}
+
+.has-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    padding-left: $space-xxs;
+    padding-right: $space-sm;
+  }
+}
+
+.progress-bar{
+  align-self: center;
+  background-color: #ddd;
+  width: 120px;
+  border-radius: 5px;
+
+  span {
+    background-color: $gray;
+    height: 8px;
+    border-radius: 5px;
+    display: block;
+    animation: progress 1s linear forwards;
+  }
+}
+
+@for $i from 1 through 100 {
+  .progress-bar-#{$i} {
+    --scale: calc(#{$i}/100 * 100%);
+  }
+}
+
+@keyframes progress {
+  0% { width:0% }
+  100%{
+    width: var(--scale);
+    background-color: $theme
   }
 }
