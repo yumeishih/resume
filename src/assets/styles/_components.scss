@@ -8,7 +8,7 @@ html, body{
   min-height: 100%;
   height: 100%;
   background-color: $theme;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #app{
@@ -18,11 +18,11 @@ html, body{
 .container {
   background-color: $white;
   margin: $space-md $space-xxlg;
-  height: 100%;
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  padding-top: 56px;
+  flex-direction: column;
+  padding: $space-sm 0;
 
   @include media-breakpoint-max(md) {
     margin: $space-md $space-sm;
@@ -31,23 +31,33 @@ html, body{
   @include media-breakpoint(md, lg) {
     margin: $space-md $space-xlg;
   }
+}
 
-  .sub-container {
-    width: 100%;
+.has-icon {
+  display: flex;
+  align-items: center;
+
+  span {
+    padding-left: $space-xxs;
+    padding-right: $space-sm;
   }
 }
+
+.text-left {
+  text-align: left;
+}
+
 
 .avatar {
   height: 80px;
   width: 80px;
-  border: 1px $theme solid;
-  border-radius: 30%;
-  position: absolute;
-  top: 8px;
+  border-radius: 20%;
+  align-self: center;
 }
 
 .info {
   text-align: center;
+  font-family: 'Titillium Web', sans-serif;
 
   &-name {
     font-size: 36px;
@@ -56,6 +66,7 @@ html, body{
   }
 
   &-detail {
+    justify-content: center;
     color: $gray;
 
     @include media-breakpoint-max(sm) {
@@ -66,24 +77,40 @@ html, body{
 
 .main {
   display: flex;
+  margin-top: $space-md;
 
   .side-bar {
     flex: 1;
-    padding-top: $space-sm
+    padding-left: $space-md;
+    padding-right: $space-sm;
   }
 
   .main-info {
-    flex: 2;
-    border: 1px $theme solid;
+    flex: 3;
+    padding-left: $space-sm;
+    padding-right: $space-md;
+  }
+
+  @include media-breakpoint-max(sm) {
+    flex-direction: column-reverse;
+    margin-top: $space-sm;
+
+    .side-bar {
+      padding: 0 $space-md;
+    }
+
+    .main-info {
+      padding: 0 $space-md;
+    }
   }
 }
 
 .side-bar-content {
   text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
   margin-bottom: $space-md;
 
   .title {
+    justify-content: center;
     font-weight: bold;
 
     span {
@@ -92,39 +119,48 @@ html, body{
   }
 
   .text-block {
-    padding: $space-xs 0
+    padding: $space-xs 0;
   }
 
   .progress-bar-block {
     display: flex;
     flex-direction: column;
-    padding: $space-xs 0
+    padding: $space-xs 0;
+
+    .has-icon {
+      justify-content: center;
+    }
+
+    .description {
+      padding: $space-xs;
+      padding-left: 12px;
+      font-size: 12px;
+
+      @include media-breakpoint-max(sm) {
+        padding: $space-sm;
+      }
+    }
   }
 }
 
-.has-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  span {
-    padding-left: $space-xxs;
-    padding-right: $space-sm;
-  }
-}
-
-.progress-bar{
+.progress-bar {
   align-self: center;
   background-color: #ddd;
   width: 120px;
   border-radius: 5px;
+  margin-top: $space-xxs;
 
   span {
     background-color: $gray;
-    height: 8px;
+    height: 5px;
     border-radius: 5px;
     display: block;
     animation: progress 1s linear forwards;
+  }
+
+  @include media-breakpoint-max(sm) {
+    width: 220px;
+    margin: $space-xxs 0;
   }
 }
 

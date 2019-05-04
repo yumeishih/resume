@@ -8,12 +8,10 @@ const App = () => {
   return (
     <div className="container">
       <Avartar />
-      <div className="sub-container">
-        <Info />
-        <div className='main'>
-          <SideBar />
-          <MainInfo />
-        </div>
+      <Info />
+      <div className='main'>
+        <SideBar />
+        <MainInfo />
       </div>
     </div>
   )
