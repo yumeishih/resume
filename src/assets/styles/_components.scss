@@ -1,4 +1,4 @@
-*{
+* {
   margin:0;
   padding:0;
   border:0;
@@ -47,6 +47,20 @@ html, body{
   text-align: left;
 }
 
+.markdown {
+  a {
+    text-decoration: none;
+    color: $dark-blue-gray;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  ol, ul {
+    padding-left: $space-sm;
+  }
+}
 
 .avatar {
   height: 80px;
@@ -175,5 +189,90 @@ html, body{
   100%{
     width: var(--scale);
     background-color: $theme
+  }
+}
+
+.main-info-content {
+  padding-bottom: $space-sm;
+
+  .title {
+    justify-content: flex-start;
+    font-weight: bolder;
+    font-size: 16px;
+
+    span {
+      padding-left: $space-md - 6px;
+    }
+  }
+
+  .block {
+    border-left: 2px $theme solid;
+    margin-left: 8px;
+    padding: $space-xxs $space-md;
+    align-items: center;
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+    color: $gray;
+
+    .block-text {
+      font-size: 13px;
+
+      @extend .markdown
+    };
+
+    @include media-breakpoint-max(sm) {
+      padding-right: 0;
+    }
+  }
+
+
+  .period-block {
+    margin-bottom: $space-sm;
+
+    .border-circle {
+      position: absolute;
+      left: -4px;
+      background-color: $white;
+      color: $theme;
+      margin-top: 8px;
+    }
+
+    .subtitle {
+      color: $black;
+      display: flex;
+      align-content: center;
+      flex-wrap: wrap;
+
+      .organization {
+        @extend .markdown
+      }
+
+      span {
+        padding-right: $space-xs;
+        padding-left: 0;
+      }
+
+      .sm-show {
+        display: none;
+      }
+
+      @include media-breakpoint-max(sm) {
+        align-content: flex-start;
+        flex-direction: column;
+        font-size: 16px;
+
+        .sm-hide {
+          display: none;
+        }
+
+        .sm-show {
+          display: block;
+        }
+      }
+    }
+
+    .date {
+      font-size: 14px;
+    }
   }
 }

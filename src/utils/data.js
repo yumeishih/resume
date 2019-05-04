@@ -4,6 +4,13 @@ import {
   DiGit,
   DiRuby
 } from "react-icons/di";
+import {
+  MdPerson,
+  MdBusinessCenter,
+  MdSchool,
+  MdPeople,
+  MdWbIncandescent
+} from "react-icons/md";
 
 export const me = {
   name: "Shih Yu-Mei",
@@ -70,4 +77,146 @@ export const sideBarContents = [
       { text: "English", rate: "68", icon: null, description: "TOEFL: 71(2016)" }
     ]
   }
-]
+];
+
+const profile =
+  "Hi, I'm Yumi. \
+I have 3+ years experience in software development, \
+and have 1+ years industry experience developing large scale EC website and cooperating with several global teams. \
+I enjoy working with JavaScript and have professional experience in React and React Native. \
+";
+
+const experience = [
+  {
+    subtitle: "Software Engineer",
+    organization:
+      "[Strength Master](http://www.strengthmastergroup.com/index-en.html)",
+    local: "Taiwan",
+    start: "2019/03",
+    end: null,
+    detail:
+      "- Developed bluetooth protocols testing app saving 90% time from testing(React Native, Realm). \n\
+    - Setup team development progress, import git, eslint, and unit testing. Improve product stability. \n\
+    - Participated in new product design.\n\
+    - Mentor for team members.\n"
+  },
+  {
+    subtitle: "Front-End Engineer",
+    organization: "[Rakuten](https://www.rakuten.com.tw/)",
+    local: "Taiwan",
+    start: "2017/12",
+    end: "2018/10",
+    detail:
+      "- Develop new features and service maintained by React.js, Angular.js, Ruby on Rails, Jenkins etc by cooperating with several teams in Taiwan, Japan and Singapore.\n\
+    - Cooperate with the GPP team in Japan to implement Point Club UI.\n\
+    - Refactor Shop related page(shop top, shop info, shop ranking, etc) into RWD/AWD, using GraphQL fetching api.\n\
+    - Upgrade Webpack 3 to Webpack 4.\n\
+    - Implement shell scripts on jenkins and project to improve development efficiency.\n\
+    - Migrate discrete code to code base reduce duplicate and reload.\n"
+  },
+  {
+    subtitle: "Internship",
+    organization: "[Titansoft](https://titansoft.com/en)",
+    local: "Taiwan",
+    start: "2017/07",
+    end: "2017/08",
+    detail:
+      "- Developed C# app to login to the same account by scanning QR code.\n\
+      - Learning scrum as a development team.\
+    "
+  },
+  {
+    subtitle: "Internship",
+    organization: "[Tomofun](https://shopus.furbo.com/)",
+    local: "Taiwan",
+    start: "2017/02",
+    end: "201706",
+    detail:
+      "R&D team and MIS team \n\
+      - QA testing, include API unit test(python) and pressure test(jmeter), app, and firmware) \n\
+      - Concatenate third parties API(Facebook, GA) automatic doing data crawling \n\
+    "
+  }
+];
+
+const education = [
+  {
+    subtitle: null,
+    organization:
+      "[National Chung Cheng University(CCU)](http://ewww.ccu.edu.tw/)",
+    local: "Taiwan",
+    start: "2013/09",
+    end: "2017/06",
+    detail:
+      "B.S., Computer Science and Information Engineering\n\n\
+    - Presidential Honor Award with scholarship twice.\n\
+    - Student Assistant at Computer Center, design and develop SSO mobile web, maintain web servers(apache2)\
+    - Participated in Youth Ambassadors Taiwan(2014), visited 5 countries such as South Africa, Swaziland, Jordan, Oman, and Bahrain.\n\
+    - Participated in Computer science department badminton team. \n\
+    - Participated in Dong-Li Chinese orchestra.\n"
+  }
+];
+
+const volunteerExperience = [
+  {
+    subtitle: "International Volunteer",
+    organization: "[Taiwan ICDF](https://www.icdf.org.tw/mp.asp?mp=2)",
+    local: "Belize",
+    start: "2018/10",
+    end: "2019/02",
+    detail:
+      "Project: Sheep and goat project in Belize \n\n\
+    - Developed sheep nutrition calculator and registration demo form web(React).[Github](https://github.com/yumeishih/livestock-app-demo) \n\
+    - Developed sheep nutrition calculator android app (kotlin/android studio). \n\
+    - Acted as reporter at `Belize Small Ruminant Registry and Digital Platform Seminar`. \n\
+    - Assisted in National Sheep and Goat Breeding Center. \n\
+    - Assisted in `Embassy of the Republic of China(Taiwan)`.\n"
+  }
+];
+
+const academicProject = [
+  {
+    subtitle: "ClassFlam: From Classic to Flamenco",
+    organization: null,
+    local: null,
+    start: "2016/2",
+    end: "2016/11",
+    detail:
+      "[Project Poster](https://drive.google.com/file/d/0B1eyGDboaY64NjlBa25RbnVHWm8/view)\n\
+    - Developed genetic algorithm (GA) in C language to transfer classical music into a Flamenco style.\n\
+    - Design the structure of representation(chromosome) and fitness functions base on music theory.\n"
+  }
+];
+
+export const mainInfoContents = [
+  {
+    title: "PROFILE",
+    icon: MdPerson,
+    type: "TEXT",
+    data: profile
+  },
+  {
+    title: "EXPERIENCE",
+    icon: MdBusinessCenter,
+    type: "PERIOD",
+    data: experience
+  },
+  {
+    title: "VOLUNTEER EXPERIENCE",
+    icon: MdPeople,
+    type: "PERIOD",
+    data: volunteerExperience
+  },
+  {
+    title: "EDUCATION",
+    icon: MdSchool,
+    type: "PERIOD",
+    data: education
+  },
+  {
+    title: "ACADEMIC PROJECT",
+    icon: MdWbIncandescent,
+    type: "PERIOD",
+    data: academicProject
+  }
+];
