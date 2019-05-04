@@ -12,6 +12,16 @@ html, body {
 #app {
   height: 100%; }
 
+.export-pdf {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4px; }
+  .export-pdf button {
+    border-radius: 5px;
+    border: 1px #284269 solid;
+    background-color: #284269;
+    color: #222; }
+
 .container {
   background-color: #fff;
   margin: 36px 180px;
