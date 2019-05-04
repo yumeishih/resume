@@ -1,9 +1,9 @@
 import React from 'react'
 import { me } from 'Utils/data'
-import { TiLocation, TiPhoneOutline } from "react-icons/ti";
+import { TiLocation, TiMail } from "react-icons/ti";
 
 const Info = () => {
-  const { name, jobTitle, local, phoneNumber } = me
+  const { name, jobTitle, local, email } = me
   return (
     <div className='info'>
       <p className='info-name'>{name}</p>
@@ -11,8 +11,8 @@ const Info = () => {
         <span>{jobTitle}</span>
         <TiLocation />
         <span>{local}</span>
-        <TiPhoneOutline />
-        <span>{phoneNumber}</span>
+        <TiMail />
+        <span>{email}</span>
       </div>
     </div>
   )
