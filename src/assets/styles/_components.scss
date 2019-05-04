@@ -84,7 +84,7 @@ html, body{
     color: $gray;
 
     @include media-breakpoint-max(sm) {
-      display: none;
+      font-size: 8px;
     }
   }
 }
