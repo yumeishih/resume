@@ -47,17 +47,14 @@ html, body {
 .text-left {
   text-align: left; }
 
-.markdown a, .side-bar-content .text-block a, .main-info-content .block .block-text a, .main-info-content .period-block .subtitle .organization a {
+.markdown a, .main-info-content .block .block-text a, .main-info-content .period-block .subtitle .organization a {
   text-decoration: none;
   color: #37474F; }
-  .markdown a:hover, .side-bar-content .text-block a:hover, .main-info-content .block .block-text a:hover, .main-info-content .period-block .subtitle .organization a:hover {
+  .markdown a:hover, .main-info-content .block .block-text a:hover, .main-info-content .period-block .subtitle .organization a:hover {
     cursor: pointer; }
 
-.markdown ol, .side-bar-content .text-block ol, .main-info-content .block .block-text ol, .main-info-content .period-block .subtitle .organization ol, .markdown ul, .side-bar-content .text-block ul, .main-info-content .block .block-text ul, .main-info-content .period-block .subtitle .organization ul {
+.markdown ol, .main-info-content .block .block-text ol, .main-info-content .period-block .subtitle .organization ol, .markdown ul, .main-info-content .block .block-text ul, .main-info-content .period-block .subtitle .organization ul {
   padding: 0 16px; }
-
-.markdown p, .side-bar-content .text-block p, .main-info-content .block .block-text p, .main-info-content .period-block .subtitle .organization p {
-  padding: 2px 0; }
 
 .avatar {
   height: 80px;
@@ -109,6 +106,10 @@ html, body {
       padding: 0 16px; }
   .side-bar-content .text-block {
     padding: 4px 0; }
+    .side-bar-content .text-block a {
+      color: #37474F; }
+    .side-bar-content .text-block p {
+      padding: 2px 0; }
   .side-bar-content .progress-bar-block {
     display: flex;
     flex-direction: column;
