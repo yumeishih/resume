@@ -134,6 +134,10 @@ html, body{
 
   .text-block {
     padding: $space-xs 0;
+
+    a {
+      color: $black;
+    }
   }
 
   .progress-bar-block {

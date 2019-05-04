@@ -11,12 +11,12 @@ import {
   MdPeople,
   MdWbIncandescent
 } from "react-icons/md";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export const me = {
   name: "Shih Yu-Mei",
   jobTitle: "Software engineer",
   local: "Taichung City, Taiwan",
-  phoneNumber: "(+886)963117962",
   email: "yumeishih17@gmail.com",
   gitHub: "https://github.com/yumeishih",
   linkedin: "https://www.linkedin.com/in/yumeishih/"
@@ -26,7 +26,12 @@ export const sideBarContents = [
   {
     title: "DETAILS",
     type: "TEXT",
-    data: [me.local, me.phoneNumber, me.email]
+    data: [
+      me.local,
+      me.email,
+      { icon: FaGithub, iconLink: me.gitHub },
+      { icon: FaLinkedin, iconLink: me.linkedin }
+    ]
   },
   {
     title: "SKILLS",
