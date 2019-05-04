@@ -71,7 +71,7 @@ html, body{
   }
 
   ol, ul {
-    padding-left: $space-sm;
+    padding: 0 $space-sm;
   }
 }
 
@@ -123,11 +123,11 @@ html, body{
     margin-top: $space-sm;
 
     .side-bar {
-      padding: 0 $space-md;
+      padding: 0 24px;
     }
 
     .main-info {
-      padding: 0 $space-md;
+      padding: 0 24px;
     }
   }
 }
@@ -149,7 +149,11 @@ html, body{
     padding: $space-xs 0;
 
     a {
-      color: $black;
+      color: $dark-blue-gray;
+    }
+
+    p {
+      padding: $space-xxs 0;
     }
   }
 
@@ -165,10 +169,10 @@ html, body{
     .description {
       padding: $space-xs;
       padding-left: 12px;
-      font-size: 12px;
+      font-size: 14px;
 
       @include media-breakpoint-max(sm) {
-        padding: $space-sm;
+        padding: $space-xs;
       }
     }
   }
@@ -183,7 +187,7 @@ html, body{
 
   span {
     background-color: $gray;
-    height: 5px;
+    height: 3px;
     border-radius: 5px;
     display: block;
     animation: progress 1s linear forwards;
@@ -238,7 +242,7 @@ html, body{
     color: $gray;
 
     .block-text {
-      font-size: 13px;
+      font-size: 14px;
 
       @extend .markdown
     };

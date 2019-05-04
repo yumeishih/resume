@@ -1,7 +1,6 @@
 import {
   DiReact,
   DiJavascript1,
-  DiGit,
   DiRuby
 } from "react-icons/di";
 import {
@@ -39,14 +38,14 @@ export const sideBarContents = [
     data: [
       {
         text: "ReactJs",
-        rate: "85",
+        rate: "75",
         icon: DiReact,
         description:
           "This is favor front-end framework, also I'm familiar with react/redux development."
       },
       {
         text: "JavaScript",
-        rate: "80",
+        rate: "70",
         icon: DiJavascript1,
         description:
           "1+ years experiences on Javascript. Keep focusing on the latest ECMAScript standard like ES6, ES7."
@@ -65,7 +64,6 @@ export const sideBarContents = [
         description:
           "1 years experience in developing web server of large scale EC website written by Ruby on Rails."
       },
-      { text: "Git", rate: "80", icon: DiGit, description: null },
       {
         text: "C",
         rate: "70",
@@ -85,11 +83,7 @@ export const sideBarContents = [
 ];
 
 const profile =
-  "Hi, I'm Yumi. \
-I have 3+ years experience in software development, \
-and have 1+ years industry experience developing large scale EC website and cooperating with several global teams. \
-I enjoy working with JavaScript and have professional experience in React and React Native. \
-";
+  "Hi, I'm Yumi. I have 3+ years of experience in software development and have 1+ years of industry experience developing large scale EC website and cooperating with several global teams. I enjoy working with JavaScript and have professional experience in React and React Native.";
 
 const experience = [
   {
@@ -100,8 +94,8 @@ const experience = [
     start: "2019/03",
     end: null,
     detail:
-      "- Developed bluetooth protocols testing app saving 90% time from testing(React Native, Realm). \n\
-    - Setup team development progress, import git, eslint, and unit testing. Improve product stability. \n\
+      "- Developed Bluetooth protocols testing app saving time from testing(React Native, Realm). \n\
+    - Setup team development progress, import git, Eslint, and unit testing. Improve product stability. \n\
     - Participated in new product design.\n\
     - Mentor for team members.\n"
   },
@@ -112,11 +106,11 @@ const experience = [
     start: "2017/12",
     end: "2018/10",
     detail:
-      "- Develop new features and service maintained by React.js, Angular.js, Ruby on Rails, Jenkins etc by cooperating with several teams in Taiwan, Japan and Singapore.\n\
+      "- Develop new features and service maintained by React.js, Angular.js, Ruby on Rails, etc by cooperating with several teams in Taiwan, Japan and India.\n\
     - Cooperate with the GPP team in Japan to implement Point Club UI.\n\
-    - Refactor Shop related page(shop top, shop info, shop ranking, etc) into RWD/AWD, using GraphQL fetching api.\n\
+    - Refactor Shop related pages(shop top, shop info, shop ranking, etc) into RWD/AWD, using GraphQL fetching API.\n\
     - Upgrade Webpack 3 to Webpack 4.\n\
-    - Implement shell scripts on jenkins and project to improve development efficiency.\n\
+    - Implement shell scripts on Jenkins and project to improve development efficiency.\n\
     - Migrate discrete code to code base reduce duplicate and reload.\n"
   },
   {
@@ -126,8 +120,8 @@ const experience = [
     start: "2017/07",
     end: "2017/08",
     detail:
-      "- Developed C# app to login to the same account by scanning QR code.\n\
-      - Learning scrum as a development team.\
+      "- Developed C# app to log in to the same account by scanning QR code.\n\
+      - Learning Scrum as a development team.\
     "
   },
   {
@@ -138,7 +132,7 @@ const experience = [
     end: "2017/06",
     detail:
       "R&D team and MIS team \n\
-      - QA testing, include API unit test(python) and pressure test(jmeter), app, and firmware) \n\
+      - QA testing, include API unit test(python) and pressure test(JMeter), app, and firmware) \n\
       - Concatenate third parties API(Facebook, GA) automatic doing data crawling \n\
     "
   }
@@ -148,16 +142,16 @@ const education = [
   {
     subtitle: null,
     organization:
-      "[National Chung Cheng University(CCU)](http://ewww.ccu.edu.tw/)",
+      "[National Chung Cheng University (CCU)](http://ewww.ccu.edu.tw/)",
     local: "Taiwan",
     start: "2013/09",
     end: "2017/06",
     detail:
       "B.S., Computer Science and Information Engineering\n\n\
     - Presidential Honor Award with scholarship twice.\n\
-    - Student Assistant at Computer Center, design and develop SSO mobile web, maintain web servers(apache2)\
-    - Participated in Youth Ambassadors Taiwan(2014), visited 5 countries such as South Africa, Swaziland, Jordan, Oman, and Bahrain.\n\
-    - Participated in Computer science department badminton team. \n\
+    - Student Assistant at Computer Center, design and develop SSO mobile web, maintain web servers(apache2) \n\
+    - Participated in Youth Ambassadors Taiwan(2014), visited 5 countries including South Africa, Swaziland, Jordan, Oman, and Bahrain.\n\
+    - Participated in the Computer science department badminton team. \n\
     - Participated in Dong-Li Chinese orchestra.\n"
   }
 ];
@@ -171,9 +165,8 @@ const volunteerExperience = [
     end: "2019/02",
     detail:
       "Project: Sheep and goat project in Belize \n\n\
-    - Developed sheep nutrition calculator and registration demo form web(React).[Github](https://github.com/yumeishih/livestock-app-demo) \n\
-    - Developed sheep nutrition calculator android app (kotlin/android studio). \n\
-    - Acted as reporter at `Belize Small Ruminant Registry and Digital Platform Seminar`. \n\
+    - Developed sheep nutrition calculator and registration demo web(React [Github](https://github.com/yumeishih/livestock-app-demo)), as well as an android app (Kotlin). Helping farmers improve efficiency.\n\
+    - Acted as a reporter at `Belize Small Ruminant Registry and Digital Platform Seminar`. \n\
     - Assisted in National Sheep and Goat Breeding Center. \n\
     - Assisted in `Embassy of the Republic of China(Taiwan)`.\n"
   }

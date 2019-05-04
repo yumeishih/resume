@@ -4,9 +4,10 @@ const renderBlock = (data) => {
   const{ text, rate, description, icon } = data
   const Icon = icon
   const textLeft = description && description.length > 40 ? 'text-left' : null
+  const hasIcon = Icon ? "has-icon" : null
   return (
     <div key={text} className="progress-bar-block">
-      <div className="has-icon">
+      <div className={hasIcon}>
         {Icon && <Icon />}
         <span>{text}</span>
       </div>
