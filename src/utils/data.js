@@ -135,7 +135,7 @@ const experience = [
     organization: "[Tomofun](https://shopus.furbo.com/)",
     local: "Taiwan",
     start: "2017/02",
-    end: "201706",
+    end: "2017/06",
     detail:
       "R&D team and MIS team \n\
       - QA testing, include API unit test(python) and pressure test(jmeter), app, and firmware) \n\
