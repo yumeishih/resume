@@ -132,7 +132,7 @@ html, body {
   margin-top: 2px; }
   .progress-bar span {
     background-color: #848484;
-    height: 5px;
+    height: 3px;
     border-radius: 5px;
     display: block;
     animation: progress 1s linear forwards; }
