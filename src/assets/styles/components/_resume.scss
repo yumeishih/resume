@@ -1,17 +1,6 @@
-* {
-  margin:0;
-  padding:0;
-  border:0;
-}
-
-html, body{
-  min-height: 100%;
-  height: 100%;
+.resume {
   background-color: $theme;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-#app{
+  padding: $space-sm 0;
   height: 100%;
 }
 
@@ -35,7 +24,6 @@ html, body{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: $space-sm 0;
 
   @include media-breakpoint-max(md) {
     margin: $space-md $space-sm;

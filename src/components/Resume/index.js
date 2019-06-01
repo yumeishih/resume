@@ -28,7 +28,7 @@ const Resume = () => {
   }
 
   return (
-    <>
+    <div className="resume">
       <div className="container" id="resume">
         <Avartar />
         <Info />
@@ -38,7 +38,7 @@ const Resume = () => {
         </div>
       </div>
       <div className="export-pdf"><button onClick={handleExportOnClick}>Export to PDF</button></div>
-    </>
+    </div>
   )
 }
 
