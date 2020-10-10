@@ -6,7 +6,7 @@ const Avatar = () => {
     <img
       className="avatar"
       src={avatar}
-      alt="acatar"
+      alt="avatar"
     />
   )
 }
