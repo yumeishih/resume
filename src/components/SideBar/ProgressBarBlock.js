@@ -1,7 +1,7 @@
 import React from 'react'
 
 const renderBlock = (data) => {
-  const{ text, rate, description, icon } = data
+  const{ text, description, icon } = data
   const Icon = icon
   const textLeft = description && description.length > 40 ? 'text-left' : null
   const hasIcon = Icon ? "has-icon" : null
@@ -11,7 +11,7 @@ const renderBlock = (data) => {
         {Icon && <Icon />}
         <span>{text}</span>
       </div>
-      <div className={`progress-bar progress-bar-${rate}`}>
+      <div className={`progress-bar progress-bar-100`}>
         <span></span>
       </div>
       <div className={`description ${textLeft}`}>{description}</div>

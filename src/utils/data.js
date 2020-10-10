@@ -38,35 +38,30 @@ export const sideBarContents = [
     data: [
       {
         text: "ReactJs",
-        rate: "75",
         icon: DiReact,
         description:
           "This is favor front-end framework, also I'm familiar with react/redux development."
       },
       {
-        text: "JavaScript",
-        rate: "70",
+        text: "Javascript",
         icon: DiJavascript1,
         description:
           "1+ years experiences on Javascript. Keep focusing on the latest ECMAScript standard like ES6, ES7."
       },
       {
         text: "React Native",
-        rate: "60",
         icon: DiReact,
         description:
           "Develop 3+ app including noteTaker, BluetoothTesting, and fileSharing etc"
       },
       {
         text: "RoR",
-        rate: "35",
         icon: DiRuby,
         description:
           "1 years experience in developing web server of large scale EC website written by Ruby on Rails."
       },
       {
         text: "C",
-        rate: "70",
         icon: null,
         description: "This is how I learn Data structure and Algorithm :)"
       }
@@ -76,8 +71,8 @@ export const sideBarContents = [
     title: "LANGUAGES",
     type: "PROGRESS_BAR",
     data: [
-      { text: "Mandarin", rate: "100", icon: null, description: "Native" },
-      { text: "English", rate: "68", icon: null, description: "TOEFL: 71(2016)" }
+      { text: "Mandarin", icon: null, description: "Native" },
+      { text: "English", icon: null, description: "TOEFL: 71(2016)" }
     ]
   }
 ];
@@ -150,9 +145,7 @@ const education = [
       "B.S., Computer Science and Information Engineering\n\n\
     - Presidential Honor Award with scholarship twice.\n\
     - Student Assistant at Computer Center, design and develop SSO mobile web, maintain web servers(apache2) \n\
-    - Participated in Youth Ambassadors Taiwan(2014), visited 5 countries including South Africa, Swaziland, Jordan, Oman, and Bahrain.\n\
-    - Participated in the Computer science department badminton team. \n\
-    - Participated in Dong-Li Chinese orchestra.\n"
+    - Participated in Youth Ambassadors Taiwan(2014), visited 5 countries including South Africa, Swaziland, Jordan, Oman, and Bahrain.\n"
   }
 ];
 
